@@ -12,7 +12,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Predavanje_1
+          Predavanje_01
         </a>
       </header>
     </div>
