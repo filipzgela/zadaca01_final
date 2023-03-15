@@ -1,4 +1,5 @@
 import "./App.css";
+import PDF from "./Oblikovanje_Osvrt_1.pdf";
 
 function App() {
   return (
@@ -7,11 +8,11 @@ function App() {
         <p>Link na predavanja</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href={PDF}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Oblikovanje osvrt
         </a>
       </header>
     </div>
