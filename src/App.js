@@ -12,7 +12,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Oblikovanje osvrt
+          Predavanje_1
         </a>
       </header>
     </div>
