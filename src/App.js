@@ -1,5 +1,6 @@
 import "./App.css";
-import PDF from "./Oblikovanje_Osvrt_1.pdf";
+import PDF_1 from "./Oblikovanje_Osvrt_1.pdf";
+import PDF_2 from "./Oblikovanje_Osvrt_2.pdf";
 
 function App() {
   return (
@@ -8,11 +9,19 @@ function App() {
         <p>Link na predavanja</p>
         <a
           className="App-link"
-          href={PDF}
+          href={PDF_1}
           target="_blank"
           rel="noopener noreferrer"
         >
           Predavanje_01
+        </a>
+        <a
+          className="App-link"
+          href={PDF_2}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Predavanje_02
         </a>
       </header>
     </div>
