@@ -29,7 +29,6 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
           href={ZIP_1}
-          download={ZIP_1}
         >
           Predavanje_03
         </a>
