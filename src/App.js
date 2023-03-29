@@ -1,10 +1,9 @@
 import "./App.css";
 import PDF_1 from "./Oblikovanje_Osvrt_1.pdf";
 import PDF_2 from "./Oblikovanje_Osvrt_2.pdf";
-import ZIP_1 from "./vjezba1";
 
 function App() {
-  const zipFileUrl = "https://file.io/0OqysamryCed";
+  const zipFileUrl = process.env.PUBLIC_URL + "/files/vjezba1.zip";
 
   return (
     <div className="App">
@@ -26,7 +25,12 @@ function App() {
         >
           Predavanje_02
         </a>
-        <a className="App-link" target="_blank" href={ZIP_1}>
+        <a
+          className="App-link"
+          target="_blank"
+          href={zipFileUrl}
+          download="vjezba1.zip"
+        >
           Predavanje_03
         </a>
       </header>
