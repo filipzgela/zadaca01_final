@@ -3,7 +3,7 @@ import PDF_1 from "./Oblikovanje_Osvrt_1.pdf";
 import PDF_2 from "./Oblikovanje_Osvrt_2.pdf";
 
 function App() {
-  const zipFileUrl = "https://file.io/E9L6aOzsarVI";
+  const zipFileUrl = "https://file.io/0OqysamryCed";
 
   return (
     <div className="App">
@@ -25,7 +25,12 @@ function App() {
         >
           Predavanje_02
         </a>
-        <a href={zipFileUrl} download="vjezba1.zip">
+        <a
+          className="App-link"
+          target="_blank"
+          href={zipFileUrl}
+          download="vjezba1.zip"
+        >
           Predavanje_03
         </a>
       </header>
