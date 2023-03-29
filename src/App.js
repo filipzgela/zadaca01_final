@@ -24,7 +24,13 @@ function App() {
         >
           Predavanje_02
         </a>
-        <a href={zipFileUrl} download={ZIP_1}>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={ZIP_1}
+          download={ZIP_1}
+        >
           Predavanje_03
         </a>
       </header>
