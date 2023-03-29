@@ -3,7 +3,7 @@ import PDF_1 from "./Oblikovanje_Osvrt_1.pdf";
 import PDF_2 from "./Oblikovanje_Osvrt_2.pdf";
 
 function App() {
-  const zipFileUrl = process.env.PUBLIC_URL + "../public/vjezba1.zip";
+  const zipFileUrl = process.env.PUBLIC_URL + "/vjezba1.zip";
 
   return (
     <div className="App">
