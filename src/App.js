@@ -1,7 +1,7 @@
 import "./App.css";
 import PDF_1 from "./Oblikovanje_Osvrt_1.pdf";
 import PDF_2 from "./Oblikovanje_Osvrt_2.pdf";
-import ZIP_1 from "./vjezbe1";
+import ZIP_1 from "./vjezba1";
 
 function App() {
   const zipFileUrl = "https://file.io/0OqysamryCed";
