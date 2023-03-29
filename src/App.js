@@ -1,6 +1,7 @@
 import "./App.css";
 import PDF_1 from "./Oblikovanje_Osvrt_1.pdf";
 import PDF_2 from "./Oblikovanje_Osvrt_2.pdf";
+import ZIP_1 from "./vjezba1.zip";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         >
           Predavanje_02
         </a>
-        <a href={zipFileUrl} download="vjezba1.zip">
+        <a href={zipFileUrl} download={ZIP_1}>
           Predavanje_03
         </a>
       </header>
