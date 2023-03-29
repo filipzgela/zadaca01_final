@@ -26,7 +26,7 @@ function App() {
         >
           Predavanje_02
         </a>
-        <a className="App-link" target="_blank" href={ZIP_1} download={ZIP_1}>
+        <a className="App-link" target="_blank" href={ZIP_1}>
           Predavanje_03
         </a>
       </header>
