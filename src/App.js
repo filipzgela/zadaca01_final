@@ -3,7 +3,7 @@ import PDF_1 from "./Oblikovanje_Osvrt_1.pdf";
 import PDF_2 from "./Oblikovanje_Osvrt_2.pdf";
 
 function App() {
-  const zipFileUrl = process.env.PUBLIC_URL + "/files/vjezba1.zip";
+  const zipFileUrl = process.env.PUBLIC_URL + "../public/vjezba1.zip";
 
   return (
     <div className="App">
@@ -28,6 +28,7 @@ function App() {
         <a
           className="App-link"
           target="_blank"
+          rel="noopener noreferrer"
           href={zipFileUrl}
           download="vjezba1.zip"
         >
