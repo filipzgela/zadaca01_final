@@ -23,6 +23,9 @@ function App() {
         >
           Predavanje_02
         </a>
+        <a href={zipFileUrl} download="vjezba1.zip">
+          Predavanje_03
+        </a>
       </header>
     </div>
   );
