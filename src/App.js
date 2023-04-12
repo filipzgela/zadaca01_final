@@ -29,10 +29,17 @@ function App() {
           className="App-link"
           target="_blank"
           rel="noopener noreferrer"
-          href={zipFileUrl}
-          download="vjezba1.zip"
+          href="Vjezba_1.html"
         >
-          Predavanje_03
+          Vjezba1
+        </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="Vjezba_2.html"
+        >
+          Vjezba2
         </a>
       </header>
     </div>
