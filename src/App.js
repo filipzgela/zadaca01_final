@@ -48,6 +48,14 @@ function App() {
         >
           Vjezba3
         </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="Vjezba_4.html"
+        >
+          Vjezba4
+        </a>
       </header>
     </div>
   );
