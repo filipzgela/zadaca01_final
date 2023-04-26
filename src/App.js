@@ -64,6 +64,14 @@ function App() {
         >
           Zadaca
         </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="Vjezba_4.html"
+        >
+          Vjezba5
+        </a>
       </header>
     </div>
   );
