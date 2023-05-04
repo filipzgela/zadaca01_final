@@ -72,6 +72,30 @@ function App() {
         >
           Vjezba5
         </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="Zadaca_2.html"
+        >
+          Zadaca2
+        </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="HTML_tablica.html"
+        >
+          HTML_tablica
+        </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="HTML_tablica_CSS.html"
+        >
+          HTML_tablica_CSS
+        </a>
       </header>
     </div>
   );

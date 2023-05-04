@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body 
+{
+	margin-left:10%; 
+	margin-right:50%; 
+	background-color:#333; 
+	color:#CCC; 
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+fieldset
+{
+	margin-bottom:20px;
+	background-color:#999;
+	color:#333;
+}
+
+legend 
+{
+	background-color:#FC0; 
+	color:#333;
+}
+
+fieldset form input
+{
+	background-color:#FC0;
+}
+
+textarea 
+{
+	background-color:#CCC;
+}
+
+.zutiTekst
+{
+	color:#FC0;
+}
+
+#forma2, #forma3, #forma4
+
+{
+	border-width:1px;
+	border-style:solid;
+	border-color:#CCC;
+	background-color:#333; 
+	margin-bottom:20px;
+
+}
+
+
+.gumb
+{
+	background-color:#FC0; 
+	color:#333;
+}

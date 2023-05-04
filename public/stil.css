@@ -1,0 +1,57 @@
+body {
+	margin-left:25%;
+	margin-right:25%;
+	}
+
+h1 {
+	margin:0;
+	font-family:Georgia, "Times New Roman", Times, serif; 
+	font-size:64px;
+	text-align:center;
+	color:white;
+	background-color:black;
+	
+	}
+h2 {
+	margin:0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px; 
+	text-align:center;
+	color:#00CCFF;
+	background-color:black;
+	line-height:50px;
+	}
+ul {background-color:black;	
+	text-align:center;
+	}
+ul li {display:inline;
+	padding:20px;}
+a {
+	text-decoration:none;
+	color:#00CCFF; 
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+p {
+	text-align:justify; 
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:16px;
+	background-color:#00CCFF;
+	padding:10px;
+	margin:0;}
+.datum {font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-align:right;margin:0;}
+.tablica {
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#00CCFF;
+	background-color:black;
+	}
+	
+.tablica td {border:1px solid #FFFFFF; padding:10px; text-align:right; font-family:Verdana, Arial, Helvetica, sans-serif;
+}	
+.tablica th {padding:20px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+.oznaceniDatum { background-color:#00CCFF; color:#000000; border:1px solid #00CCFF; }
