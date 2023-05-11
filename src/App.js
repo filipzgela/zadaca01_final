@@ -96,6 +96,14 @@ function App() {
         >
           HTML_tablica_CSS
         </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="Zadaca_3.html"
+        >
+          Zadaca_3
+        </a>
       </header>
     </div>
   );
