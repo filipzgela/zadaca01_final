@@ -1,0 +1,67 @@
+
+<html>
+
+<head> 
+
+<title> prompt() funkcija </title> 
+
+<script language="JavaScript">
+
+var upit="Upišite ime:";
+
+var ime=prompt(upit, "samo ime molim");
+
+var upit2="Upišite prezime:";
+
+var prezime=prompt(upit, "samo prezime molim");
+
+
+var danas= new Date();
+var dan=danas.getDate();
+var mjesec= danas.getMonth();
+mjesec=mjesec+1;
+var godina=danas.getFullYear();
+var datum=dan+" / "+mjesec+" / "+godina;
+
+var sat=danas.getHours();
+var min=danas.getMinutes();
+var sek=danas.getSeconds();
+var vrijeme=sat+":"+min+":"+sek;
+
+</script>
+
+</head>
+
+<body>
+
+<h1> Postovani g./gdo./gdice.
+<script language="JavaScript">
+
+document.write(ime); 
+document.write(" "+prezime);
+
+</script>
+
+,</h1>
+hvala što ste se registrirali.
+
+<br>
+<br>
+<br>
+<br>
+
+<script language="JavaScript">
+
+document.write(datum);
+
+</script>
+
+<br>
+
+<script language="JavaScript">
+
+document.write("<h5><b><i>"+vrijeme+"</i></b></h5>");
+
+</script>
+
+</html>
