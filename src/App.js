@@ -108,7 +108,7 @@ function App() {
           className="App-link"
           target="_blank"
           rel="noopener noreferrer"
-          href="vjezba_6.html"
+          href="javaskripta/vjezba_6.html"
         >
           Vjezba6
         </a>
@@ -116,7 +116,7 @@ function App() {
           className="App-link"
           target="_blank"
           rel="noopener noreferrer"
-          href="Zadaca_4.html"
+          href="javaskripta/Zadaca_4.html"
         >
           Zadaca_4
         </a>
