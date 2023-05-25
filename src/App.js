@@ -120,7 +120,7 @@ function App() {
         >
           Zadaca_4
         </a>
-        </a>
+        
         <a
           className="App-link"
           target="_blank"
