@@ -120,6 +120,15 @@ function App() {
         >
           Zadaca_4
         </a>
+        </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="javaskripta/Zadaca5.html"
+        >
+          Zadaca_5
+        </a>
       </header>
     </div>
   );
