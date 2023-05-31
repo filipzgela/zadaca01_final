@@ -1,0 +1,87 @@
+<html>
+<head> 
+<title> Zadaca 10 </title> 
+<script language="JavaScript">
+
+function checkAll()
+{
+    var checkboxes = document.getElementsByName("mojaforma2")[0].getElementsByTagName("input");
+
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = true;
+    }
+}
+
+function uncheckAll()
+{
+    var checkboxes = document.getElementsByName("mojaforma2")[0].getElementsByTagName("input");
+
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = false;
+    }
+}
+
+function showAdvice()
+{
+    var countryIndex = document.getElementsByName("drzava")[0].selectedIndex;
+    var country = document.getElementsByName("drzava")[0].options[countryIndex].text;
+
+    var cityIndex = document.getElementsByName("grad")[0].selectedIndex;
+    var city = document.getElementsByName("grad")[0].options[cityIndex].text;
+
+    var languageIndex = document.getElementsByName("jezik")[0].selectedIndex;
+    var language = document.getElementsByName("jezik")[0].options[languageIndex].text;
+
+    alert("Dobrodošli u " + city + ", " + country + "! Pretpostavljam da pričate " + language + ".");
+}
+
+</script>
+</head>
+
+<body>
+<h2> Koje jezike govorite? </h2>
+<form name="mojaforma2">
+    <input type="checkbox"><font color="red"><b>Engleski</b></font> <br>
+    <input type="checkbox"><font color="green"><b>Francuski</b></font> <br>
+    <input type="checkbox"><font color="blue"><b>Njemački</b></font> <br>
+    <br>
+    <input type="button" value="Označi sve" onClick="checkAll();">
+    <br>
+    <br>
+    <input type="button" value="Odznaci sve" onClick="uncheckAll();"> 
+</form>    
+<br><br>
+<form name="mojaforma">
+    Izaberite državu: <br> <br>
+    <select name="drzava" size="1"> 
+        <option>Hrvatska
+        <option>Srbija
+        <option>Bosna i Hercegovina
+        <option>Crna Gora
+        <option>Slovenija
+        <option>Makedonija
+    </select>
+    <br> <br>
+    Izaberite grad:
+    <select name="grad" size="1"> 
+        <option>Zagreb
+        <option>Beograd
+        <option>Sarajevo
+        <option>Podgorica
+        <option>Ljubljana
+        <option>Skopje
+    </select> <p>
+    <br> <br>    
+    Izaberite glavni jezik:
+    <select name="jezik" size="1"> 
+        <option>Hrvatski
+        <option>Srpski
+        <option>Bosanski
+        <option>Crnogorski
+        <option>Slovenski
+        <option>Makedonski
+    </select> <p>
+    <input type="button" value="Prikaži savjet" onClick="showAdvice();">
+</form>
+</body>
+</html>
