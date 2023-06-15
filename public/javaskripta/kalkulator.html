@@ -1,0 +1,123 @@
+
+<html>
+<head>
+<title>Zadaca 7 </title>
+<script language="JavaScript">
+
+function SumirajPolja()
+{
+var broj1=parseFloat(window.document.mojaforma.polje1.value);
+var broj2=parseFloat(window.document.mojaforma.polje2.value);
+var suma=broj1+broj2;
+window.document.mojaforma.rezultat.value=suma;
+}
+
+function OduzmiPolja()
+{
+var broj1=parseFloat(window.document.mojaforma.polje1.value);
+var broj2=parseFloat(window.document.mojaforma.polje2.value);
+var suma=broj1-broj2;
+window.document.mojaforma.rezultat.value=suma;
+}
+
+function PodijeliPolja()
+{
+var broj1=parseFloat(window.document.mojaforma.polje1.value);
+var broj2=parseFloat(window.document.mojaforma.polje2.value);
+var rez=broj1/broj2;
+window.document.mojaforma.rezultat.value=rez;
+}
+
+function PomnoziPolja()
+{
+var broj1=parseFloat(window.document.mojaforma.polje1.value);
+var broj2=parseFloat(window.document.mojaforma.polje2.value);
+var rez=broj1*broj2;
+window.document.mojaforma.rezultat.value=rez;
+}
+
+function PotencirajPolja()
+{
+var broj1=parseFloat(window.document.mojaforma.polje1.value);
+var broj2=parseFloat(window.document.mojaforma.polje2.value);
+var rez= Math.pow(broj1,broj2);
+window.document.mojaforma.rezultat.value=rez;
+}
+
+
+
+
+
+var timenik = {
+    "Filip": "634-338-212",
+    "Matija": "098-222-212",
+    "Anamarija": "099-555-212",
+    "Lucija": "097-338-212",
+    "Luka": "091-782-212"
+  };
+
+  function pokazibroj(telefonimenik, ulaz) {
+    var broj = telefonimenik[ulaz];
+    document.getElementsByName("trazenibroj")[0].value = broj;
+  }
+
+
+
+var asocboje=new Array();
+asocboje["Filip"]="red";
+asocboje["Matija"]="purple";
+asocboje["Anamarija"]="gray";
+asocboje["Lucija"]="green";
+asocboje["Luka"]="blue";
+
+ function promijeniBoju(paleta, ulaz) {
+    var boja = paleta[ulaz];
+    document.body.style.backgroundColor = boja;
+  }
+
+</script>
+</head>
+
+<body>
+    
+
+<form name="mojaforma">
+    
+<h2>Kalkulator</h2>
+Broj a: <input type="text" name="polje1"><br><br>
+Broj b: <input type="text" name="polje2"><br><br>
+Rezultat: <input type="text" name="rezultat"><br><br>
+
+<input type="button" value="a+b" onClick="SumirajPolja();"> 
+
+<input type="button" value="a-b" onClick="OduzmiPolja();"> 
+
+<input type="button" value="a*b" onClick="PomnoziPolja();"> 
+
+<input type="button" value="a/b" onClick="PodijeliPolja();">
+
+<input type="button" value="a^b" onClick="PotencirajPolja();"> 
+
+</form>
+
+<br>
+
+
+<h2> Telefonski imenik</h2>
+<form name="mojaforma2">
+  <h4> Ime:</h4>
+  <select onChange="pokazibroj(timenik, this.options[this.selectedIndex].value); promijeniBoju(asocboje, this.options[this.selectedIndex].value);">
+    <option value="Filip">Filip</option>
+    <option value="Matija">Matija</option>
+    <option value="Anamarija">Anamarija</option>
+    <option value="Lucija">Lucija</option>
+    <option value="Luka">Luka</option>
+  </select>
+<br>
+  <h4>Broj:</h4>
+  <input type="text" name="trazenibroj" value="">
+</form>
+
+
+
+</html>
