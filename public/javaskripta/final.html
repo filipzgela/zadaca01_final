@@ -96,6 +96,26 @@ function animiraj1() {
 
     vrijeme5 = setTimeout("animiraj1();", 10);
 }
+var vrijeme12;
+function animiraj12() {
+    var mojDIV5 = window.document.getElementById("wea").style;
+
+    var pomak5 = Math.floor(Math.random() * 10);
+    if (Math.floor(Math.random() * 10) < 5) {
+        mojDIV5.left = parseInt(mojDIV5.left) + pomak5;
+    } else {
+        mojDIV5.left = parseInt(mojDIV5.left) - pomak5;
+    }
+
+    var pomak6 = Math.floor(Math.random() * 10);
+    if (Math.floor(Math.random() * 10) < 5) {
+        mojDIV5.top = parseInt(mojDIV5.top) + pomak6;
+    } else {
+        mojDIV5.top = parseInt(mojDIV5.top) - pomak6;
+    }
+
+    vrijeme12 = setTimeout("animiraj12();", 10);
+}
 
 var vrijeme6;
 
@@ -198,8 +218,9 @@ setInterval(randomizeZIndex, 1000);
 <div id="wea" style="position:absolute; top:650px; left:600px; z-index:2">
     <img src="slika3.jpg" height="250" />
 </div>
-<input type="button" value="Pokreni ludnicu" onclick="vrijeme6=setTimeout('animiraj2();',10);">
-<input type="button" value="Zaustavi ludnicu" onclick="clearTimeout(vrijeme6);">
+<input type="button" value="Pokreni ludnicu" <input type="button" value="Pokreni ludnicu" onclick="vrijeme6=setTimeout('animiraj2();',10); vrijeme12=setTimeout('animiraj12();',10);">
+
+<input type="button" value="Zaustavi ludnicu" onclick="clearTimeout(vrijeme6);clearTimeout(vrijeme12)">
 
 </body>
 </html>
