@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>Animacija</title>
+<script language="JavaScript">
+var vrijeme;
+
+function promjena() {
+    var broj = window.document.mojaforma.tekst.value;
+    broj = parseInt(broj) + 1;
+    window.document.mojaforma.tekst.value = broj;
+    vrijeme = setTimeout("promjena();", 1000);
+}
+
+var vrijeme1;
+
+function promjena1() {
+    var broj1 = window.document.mojaforma1.tekst.value;
+    broj1 = parseInt(broj1) + 1;
+    window.document.mojaforma1.tekst.value = broj1;
+    vrijeme1 = setTimeout("promjena1();", 100);
+}
+
+var vrijeme2;
+
+function promjena2() {
+    var broj2 = window.document.mojaforma2.tekst.value;
+    broj2 = parseInt(broj2) + 1;
+    window.document.mojaforma2.tekst.value = broj2;
+    vrijeme2 = setTimeout("promjena2();", 10);
+}
+
+var slike = [];
+slike[0] = new Image();
+slike[0].src = "slika1.png";
+slike[1] = new Image();
+slike[1].src = "slika2.png";
+slike[2] = new Image();
+slike[2].src = "slika3.jpg";
+slike[3] = new Image();
+slike[3].src = "slika4.jpg";
+
+var vrijeme7;
+var indeks = 0;
+
+function zamjenisliku() {
+    window.document.mojaslika.src = slike[indeks].src;
+    indeks++;
+    if (indeks >= slike.length) {
+        indeks = 0;
+    }
+    vrijeme7 = setTimeout("zamjenisliku();", 1000);
+}
+
+var vrijeme3;
+var indeks1 = 0;
+
+function zamjenisliku1() {
+    window.document.mojaslika1.src = slike[indeks1].src;
+    indeks1++;
+    if (indeks1 >= slike.length) {
+        indeks1 = 0;
+    }
+    vrijeme3 = setTimeout("zamjenisliku1();", 100);
+}
+
+var vrijeme4;
+var indeks2 = 0;
+
+function zamjenisliku2() {
+    window.document.mojaslika2.src = slike[indeks2].src;
+    indeks2++;
+    if (indeks2 >= slike.length) {
+        indeks2 = 0;
+    }
+    vrijeme4 = setTimeout("zamjenisliku2();", 10);
+}
+
+var vrijeme5;
+
+function animiraj1() {
+    var mojDIV1 = window.document.getElementById("smile").style;
+
+    var pomak1 = Math.floor(Math.random() * 10);
+    if (Math.floor(Math.random() * 10) < 5) {
+        mojDIV1.left = parseInt(mojDIV1.left) + pomak1;
+    } else {
+        mojDIV1.left = parseInt(mojDIV1.left) - pomak1;
+    }
+
+    var pomak2 = Math.floor(Math.random() * 10);
+    if (Math.floor(Math.random() * 10) < 5) {
+        mojDIV1.top = parseInt(mojDIV1.top) + pomak2;
+    } else {
+        mojDIV1.top = parseInt(mojDIV1.top) - pomak2;
+    }
+
+    vrijeme5 = setTimeout("animiraj1();", 10);
+}
+
+var vrijeme6;
+
+function animiraj2() {
+    var mojDIV2 = window.document.getElementById("sad").style;
+
+    var pomak3 = Math.floor(Math.random() * 10);
+    if (Math.floor(Math.random() * 10) < 5) {
+        mojDIV2.left = parseInt(mojDIV2.left) + pomak3;
+    } else {
+        mojDIV2.left = parseInt(mojDIV2.left) - pomak3;
+    }
+
+    var pomak4 = Math.floor(Math.random() * 10);
+    if (Math.floor(Math.random() * 10) < 5) {
+        mojDIV2.top = parseInt(mojDIV2.top) + pomak4;
+    } else {
+        mojDIV2.top = parseInt(mojDIV2.top) - pomak4;
+    }
+
+    vrijeme6 = setTimeout("animiraj2();", 10);
+}
+
+function randomizeZIndex() {
+    var smileDiv = window.document.getElementById("smile").style;
+    var emojiDiv = window.document.getElementById("emoji").style;
+    var sadDiv = window.document.getElementById("sad").style;
+    var weaDiv = window.document.getElementById("wea").style;
+
+    smileDiv.zIndex = Math.floor(Math.random() * 10);
+    emojiDiv.zIndex = Math.floor(Math.random() * 10);
+    sadDiv.zIndex = Math.floor(Math.random() * 10);
+    weaDiv.zIndex = Math.floor(Math.random() * 10);
+}
+
+setInterval(randomizeZIndex, 1000);
+
+</script>
+
+</head>
+
+<body>
+
+
+<form name="mojaforma">
+    <input type="text" name="tekst" value="0"><br>
+    <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme); promjena();">
+    <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme);">
+</form>
+
+
+<form name="mojaforma1">
+    <input type="text" name="tekst" value="0"><br>
+    <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme1); promjena1();">
+    <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme1);">
+</form>
+
+
+<form name="mojaforma2">
+    <input type="text" name="tekst" value="0"><br>
+    <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme2); promjena2();">
+    <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme2);">
+</form>
+
+
+<div style="display: flex; flex-direction: row;">
+    <img name="mojaslika" src="slika1.png" height="300">
+    <img name="mojaslika1" src="slika1.png" height="300">
+    <img name="mojaslika2" src="slika1.png" height="300">
+</div>
+
+<form>
+    <input type="button" value="Startaj show1" onClick="clearTimeout(vrijeme7); zamjenisliku();">
+    <input type="button" value="Zaustavi show1" onClick="clearTimeout(vrijeme7);">
+
+
+    <input type="button" value="Startaj show2" onClick="clearTimeout(vrijeme3); zamjenisliku1();">
+    <input type="button" value="Zaustavi show2" onClick="clearTimeout(vrijeme3);">
+
+
+
+
+    <input type="button" value="Startaj show3" onClick="clearTimeout(vrijeme4); zamjenisliku2();">
+    <input type="button" value="Zaustavi show3" onClick="clearTimeout(vrijeme4);">
+</form>
+
+<div id="smile" style="position:absolute; top:650px; left:200px; z-index:1">
+    <img src="slika1.png" height="250" />
+</div>
+<div id="emoji" style="position:absolute; top:650px; left:200px; z-index:2">
+    <img src="slika4.jpg" height="250">
+</div>
+<input type="button" value="Pokreni ludnicu" onclick="vrijeme5=setTimeout('animiraj1();',10);">
+<input type="button" value="Zaustavi ludnicu" onclick="clearTimeout(vrijeme5);">
+<br>
+
+<div id="sad" style="position:absolute; top:650px; left:600px; z-index:1">
+    <img src="slika2.png" height="250" />
+</div>
+<div id="wea" style="position:absolute; top:650px; left:600px; z-index:2">
+    <img src="slika3.jpg" height="250" />
+</div>
+<input type="button" value="Pokreni ludnicu" onclick="vrijeme6=setTimeout('animiraj2();',10);">
+<input type="button" value="Zaustavi ludnicu" onclick="clearTimeout(vrijeme6);">
+
+</body>
+</html>

@@ -145,6 +145,14 @@ function App() {
         >
           Zadaca_7
         </a>
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="javaskripta/final.html"
+        >
+          Zadaca_FINAL
+        </a>
       </header>
     </div>
   );
