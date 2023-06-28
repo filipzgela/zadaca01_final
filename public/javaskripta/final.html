@@ -153,6 +153,28 @@ function randomizeZIndex() {
 
 setInterval(randomizeZIndex, 1000);
 
+function pokreniSve() {
+    clearTimeout(vrijeme);
+    clearTimeout(vrijeme1);
+    clearTimeout(vrijeme2);
+    clearTimeout(vrijeme7);
+    clearTimeout(vrijeme3);
+    clearTimeout(vrijeme4);
+    clearTimeout(vrijeme5);
+    clearTimeout(vrijeme6);
+    clearTimeout(vrijeme12);
+
+    promjena();
+    promjena1();
+    promjena2();
+    zamjenisliku();
+    zamjenisliku1();
+    zamjenisliku2();
+    animiraj1();
+    animiraj2();
+    animiraj12();
+}
+
 </script>
 
 </head>
@@ -160,25 +182,32 @@ setInterval(randomizeZIndex, 1000);
 <body>
 
 
-<form name="mojaforma">
-    <input type="text" name="tekst" value="0"><br>
-    <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme); promjena();">
-    <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme);">
-</form>
+<table>
+  <tr>
+    <td>
+      <form name="mojaforma">
+        <input type="text" name="tekst" value="0"><br>
+        <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme); promjena();">
+        <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme);">
+      </form>
+    </td>
+    <td>
+      <form name="mojaforma1">
+        <input type="text" name="tekst" value="0"><br>
+        <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme1); promjena1();">
+        <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme1);">
+      </form>
+    </td>
+    <td>
+      <form name="mojaforma2">
+        <input type="text" name="tekst" value="0"><br>
+        <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme2); promjena2();">
+        <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme2);">
+      </form>
+    </td>
+  </tr>
+</table>
 
-
-<form name="mojaforma1">
-    <input type="text" name="tekst" value="0"><br>
-    <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme1); promjena1();">
-    <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme1);">
-</form>
-
-
-<form name="mojaforma2">
-    <input type="text" name="tekst" value="0"><br>
-    <input type="button" value="Startaj vrijeme" onclick="clearTimeout(vrijeme2); promjena2();">
-    <input type="button" value="Zaustavi vrijeme" onclick="clearTimeout(vrijeme2);">
-</form>
 
 
 <div style="display: flex; flex-direction: row;">
@@ -188,39 +217,48 @@ setInterval(randomizeZIndex, 1000);
 </div>
 
 <form>
+<div  style="position:absolute; top:370px; left:80px; z-index:1">
     <input type="button" value="Startaj show1" onClick="clearTimeout(vrijeme7); zamjenisliku();">
     <input type="button" value="Zaustavi show1" onClick="clearTimeout(vrijeme7);">
-
-
+</div>
+<div  style="position:absolute; top:370px; left:400px; z-index:1">
     <input type="button" value="Startaj show2" onClick="clearTimeout(vrijeme3); zamjenisliku1();">
     <input type="button" value="Zaustavi show2" onClick="clearTimeout(vrijeme3);">
-
-
-
-
+	</div>
+<div  style="position:absolute; top:370px; left:720px; z-index:1">
     <input type="button" value="Startaj show3" onClick="clearTimeout(vrijeme4); zamjenisliku2();">
     <input type="button" value="Zaustavi show3" onClick="clearTimeout(vrijeme4);">
+	</div>
 </form>
 
-<div id="smile" style="position:absolute; top:650px; left:200px; z-index:1">
+<div id="smile" style="position:absolute; top:400px; left:200px; z-index:1">
     <img src="slika1.png" height="250" />
 </div>
-<div id="emoji" style="position:absolute; top:650px; left:200px; z-index:2">
+<div id="emoji" style="position:absolute; top:400px; left:200px; z-index:2">
     <img src="slika4.jpg" height="250">
 </div>
+<div  style="position:absolute; top:670px; left:240px; z-index:1">
 <input type="button" value="Pokreni ludnicu" onclick="vrijeme5=setTimeout('animiraj1();',10);">
 <input type="button" value="Zaustavi ludnicu" onclick="clearTimeout(vrijeme5);">
 <br>
+</div>
 
-<div id="sad" style="position:absolute; top:650px; left:600px; z-index:1">
+<div id="sad" style="position:absolute; top:400px; left:600px; z-index:1">
     <img src="slika2.png" height="250" />
 </div>
-<div id="wea" style="position:absolute; top:650px; left:600px; z-index:2">
-    <img src="slika3.jpg" height="250" />
+<div id="wea" style="position:absolute; top:400px; left:600px; z-index:2">
+    <img src="slika3.jpg" height="250">
 </div>
-<input type="button" value="Pokreni ludnicu" <input type="button" value="Pokreni ludnicu" onclick="vrijeme6=setTimeout('animiraj2();',10); vrijeme12=setTimeout('animiraj12();',10);">
+<div  style="position:absolute; top:670px; left:600px; z-index:1">
+<input type="button" value="Pokreni ludnicu" <input type="button" value="Pokreni ludnicu" onclick="clearTimeout(vrijeme6);clearTimeout(vrijeme12);vrijeme6=setTimeout('animiraj2();',10); vrijeme12=setTimeout('animiraj12();',10);">
 
 <input type="button" value="Zaustavi ludnicu" onclick="clearTimeout(vrijeme6);clearTimeout(vrijeme12)">
+<br>
+</div>
+
+<div style="position:absolute; top:800px; left:500px;">
+    <input type="button" value="POKRENI SVE ODJEDNOM!!" onclick="pokreniSve();">
+</div>
 
 </body>
 </html>
